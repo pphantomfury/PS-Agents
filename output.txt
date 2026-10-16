@@ -1,0 +1,17 @@
+Nodes: 19 Edges: 42
+Abstract edges: [('Nairobi', 'Central Highlands'), ('Nairobi', 'Rift Valley'), ('Central Highlands', 'Nairobi'), ('Rift Valley', 'Nairobi'), ('Rift Valley', 'Lake Victoria Basin'), ('Lake Victoria Basin', 'Rift Valley')]
+Abstract plan: Nairobi -> Rift Valley -> Lake Victoria Basin
+Concrete path: Nairobi -> Naivasha -> Gilgil -> Nakuru -> Kericho -> Kisumu
+Total cost: 365 km
+
+Mermaid search tree:
+flowchart TD
+  Nairobi -->|35| Limuru
+  Nairobi -->|90| Naivasha
+  Naivasha -->|35| Gilgil
+  Gilgil -->|35| Nakuru
+  Nakuru -->|115| Kericho
+  Nakuru -->|155| Eldoret
+  Kericho -->|90| Kisumu
+  Eldoret -->|70| Kitale
+  Eldoret -->|110| Kakamega
